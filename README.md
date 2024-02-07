@@ -24,7 +24,6 @@ To finish the game, you just need to collect all the cups and go to the exit doo
 ## Customization
 
 You can also customize the program by using your own images on the screen. To do that, follow these steps:
-```bash
 1 -) Find 5 images for the player, the floor, the wall and the collectible items
 2 -) Adjust the size of the photos to 64x64. You can use https://www.iloveimg.com/resize-image
 3 -) Convert the images you have adjusted to .xpm file. You can use https://convertio.co/tr/jpg-xpm/
@@ -32,5 +31,8 @@ You can also customize the program by using your own images on the screen. To do
      The program will not work if the names are different.
 5 -) Remove the files in the textures directory and place your own xpm files there.
 6 -) Run make and then run the program. You will see your uploaded images on the screen.
-```
+
+
+
+
 ![Game View](https://github.com/MeNasy/so_long_linux/issues/1#issue-2123498410)
