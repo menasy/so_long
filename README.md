@@ -19,6 +19,7 @@ To run the program, use one of the following commands:
 ./so_long maps/mini.ber
 ```
 After these steps, the game will start.
+You can use the W, A, S, D keys or the arrow keys to move the player. To close the programme you can use the ESC key or the window close key.
 To finish the game, you just need to collect all the cups and go to the exit door :) good luck...
 
 ## Customization
