@@ -2,7 +2,7 @@
 # So_long
 
 So_long is a 2D game development project in C programming language that we did for 42 schools to understand graphical interfaces and mlx library.
-
+![Game View](https://github.com/MeNasy/so_long_linux/issues/1#issue-2123498410)
 ## Installation
 ```bash
 git clone git@github.com:MeNasy/so_long.git so_long
@@ -31,8 +31,3 @@ You can also customize the program by using your own images on the screen. To do
      The program will not work if the names are different.
 5 -) Remove the files in the textures directory and place your own xpm files there.
 6 -) Run make and then run the program. You will see your uploaded images on the screen.
-
-
-
-
-![Game View](https://github.com/MeNasy/so_long_linux/issues/1#issue-2123498410)
