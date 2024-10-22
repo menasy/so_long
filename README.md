@@ -2,7 +2,10 @@
 # So_long
 
 So_long is a 2D game development project in C programming language that we did for 42 schools to understand graphical interfaces and mlx library.
-![Game View](https://github.com/menasy/so_long/blob/main/so_long_GameView.png)
+## Game View  
+[![Game View](https://github.com/menasy/so_long/blob/main/so_long_GameView.png)](https://github.com/menasy/so_long/raw/main/so_long_demo.mov)
+
+_Click the image above to download the demo video!_
 ## Installation
 ```bash
 git clone git@github.com:MeNasy/so_long.git so_long
