@@ -9,9 +9,13 @@ _Click the image above to download the demo video!_
 ## Installation
 ```bash
 git clone git@github.com:MeNasy/so_long.git so_long
+cd so_long
+```
+For Linux install X11
+```bash
+sudo apt install libx11-dev libxext-dev libxi-dev libxrandr-dev libxpm-dev libxmu-dev libxi-dev libxcursor-dev libxt-dev libbsd-dev libjpeg-dev libpng-dev libtiff-dev libgif-dev libopenexr-dev libmpc-dev libgmp-dev libmpfr-dev libgomp1 libgomp-plugin-nvptx libgomp1-plugin-nvptx libatomic1 libquadmath0 libpgm-dev libssl-dev
 ```
 ## Usage
-
 To compile the program, run:
 ```bash
 make
