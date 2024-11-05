@@ -13,11 +13,19 @@
 #ifndef SO_LONG_H
 # define SO_LONG_H
 
+# ifdef __linux__
+#  include "mlx_linux/mlx.h"
+#  define LIB_NAME = "Linux Library"
+#		include <X11/X.h>
+# else
+#  include "mlx_mac/mlx.h"
+#  define LIB_NAME = "Mac Library"
+# endif
+
 # include <stdlib.h>
 # include <unistd.h>
 # include "gnl/get_next_line.h"
 # include <fcntl.h>
-# include "mlx/mlx.h"
 # include "libft/libft.h"
 
 typedef struct s_mlx
@@ -54,7 +62,8 @@ typedef struct s_map
 }	t_map;
 
 char	*ft_file_name_check(char *argv, t_map *dt);
-int		ft_key_handler(int keycode, t_map *dt);
+int		ft_key_handler_mac(int keycode, t_map *dt);
+int		ft_key_handler_linux(int key_code, t_map *dt);
 int		ft_map_line_count(t_map *dt);
 void	ft_map_read(t_map *dt);
 void	ft_wall_checker(t_map *dt);

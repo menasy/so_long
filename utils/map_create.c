@@ -10,7 +10,7 @@
        ░      ░  ░         ░       ░  ░      ░  ░ ░
                                                 ░ ░*/
 
-#include "so_long.h"
+#include "../inc/so_long.h"
 
 void	ft_open_wind(t_map *dt)
 {
@@ -67,7 +67,7 @@ void	ft_put_image(t_map *dt)
 	}
 }
 
-int	ft_key_handler(int key_code, t_map *dt)
+int	ft_key_handler_mac(int key_code, t_map *dt)
 {
 	if (key_code == 53)
 	{
@@ -83,6 +83,26 @@ int	ft_key_handler(int key_code, t_map *dt)
 		ft_go_right(dt);
 	if (key_code == 13 || key_code == 126)
 		ft_go_up(dt);
+	ft_put_image(dt);
+	return (0);
+}
+
+int	ft_key_handler_linux(int key_code, t_map *dt)
+{
+	if (key_code == 65307)
+	{
+		ft_free_mlx(dt);
+		write(1, "Window is closed !\n", 20);
+		exit(0);
+	}
+	if (key_code == 97 || key_code == 65361)
+		ft_go_left(dt);
+	if (key_code == 119 || key_code == 65362)
+		ft_go_up(dt);
+	if (key_code == 100 || key_code == 65363)
+		ft_go_right(dt);
+	if (key_code == 115 || key_code == 65364)
+		ft_go_down(dt);
 	ft_put_image(dt);
 	return (0);
 }

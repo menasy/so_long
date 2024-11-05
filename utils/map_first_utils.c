@@ -10,7 +10,7 @@
        ░      ░  ░         ░       ░  ░      ░  ░ ░
                                                 ░ ░*/
 
-#include "so_long.h"
+#include "../inc/so_long.h"
 
 char	*ft_file_name_check(char *argv, t_map *dt)
 {

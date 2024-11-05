@@ -10,7 +10,7 @@
        ░      ░  ░         ░       ░  ░      ░  ░ ░
                                                 ░ ░*/
 
-#include "so_long.h"
+#include "inc/so_long.h"
 
 int	main(int ac, char *argv[])
 {
@@ -34,9 +34,14 @@ int	main(int ac, char *argv[])
 	ft_flood_fill(dt->locplyr[0], dt->locplyr[1], dt);
 	ft_flood_fill_check(dt);
 	ft_open_wind(dt);
-	
-	mlx_hook(dt->sml->wind, 02, 0L, ft_key_handler, dt);
-	mlx_hook(dt->sml->wind, 17, 0L, ft_close_window, dt);
+
+	# if defined(__APPLE__)
+		mlx_hook(dt->sml->wind, 02, 0L, ft_key_handler_mac, dt);
+		mlx_hook(dt->sml->wind, 17, 0L, ft_close_window, dt);
+	# elif defined(__linux__)
+		mlx_key_hook(dt->sml->wind, ft_key_handler_linux, dt);
+		mlx_hook(dt->sml->wind, 33, 0L, ft_close_window, dt);
+	# endif
 	mlx_loop(dt->sml->init);
 	return (0);
 }

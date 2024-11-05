@@ -10,7 +10,7 @@
        ░      ░  ░         ░       ░  ░      ░  ░ ░
                                                 ░ ░*/
 
-#include "so_long.h"
+#include "../inc/so_long.h"
 
 void	ft_wall_checker(t_map *dt)
 {

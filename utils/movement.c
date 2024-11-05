@@ -10,7 +10,7 @@
        ░      ░  ░         ░       ░  ░      ░  ░ ░
                                                 ░ ░*/
 
-#include "so_long.h"
+#include "../inc/so_long.h"
 
 void	ft_go_right(t_map *dt)
 {
