@@ -34,7 +34,7 @@ int	main(int ac, char *argv[])
 	ft_flood_fill(dt->locplyr[0], dt->locplyr[1], dt);
 	ft_flood_fill_check(dt);
 	ft_open_wind(dt);
-
+	system("afplay GameView/FB.mp3 & ps -ax | grep -v grep | grep afplay | awk '{print $1}' > FB.txt");
 	# if defined(__APPLE__)
 		mlx_hook(dt->sml->wind, 02, 0L, ft_key_handler_mac, dt);
 		mlx_hook(dt->sml->wind, 17, 0L, ft_close_window, dt);

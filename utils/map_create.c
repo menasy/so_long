@@ -72,6 +72,8 @@ int	ft_key_handler_mac(int key_code, t_map *dt)
 	if (key_code == 53)
 	{
 		ft_free_mlx(dt);
+		system("kill -9 $(cat FB.txt)");
+		unlink("FB.txt");
 		write(1, "Window is closed !\n", 20);
 		exit(0);
 	}

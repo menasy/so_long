@@ -16,6 +16,8 @@ void	ft_error_0(char *s, t_map *dt)
 {
 	free(dt);
 	write (2, s, ft_strlen(s));
+		system("kill -9 $(cat FB.txt)");
+		unlink("FB.txt");
 	exit(1);
 }
 
@@ -32,6 +34,8 @@ void	ft_error_1(char *s, t_map *dt)
 	free(dt->map_dir);
 	free(dt);
 	write (2, s, ft_strlen(s));
+		system("kill -9 $(cat FB.txt)");
+		unlink("FB.txt");
 	exit(1);
 }
 
@@ -49,6 +53,8 @@ void	ft_error_2(char *s, t_map *dt)
 	free(dt->almp);
 	free(dt);
 	write (2, s, ft_strlen(s));
+		system("kill -9 $(cat FB.txt)");
+		unlink("FB.txt");
 	exit(1);
 }
 
@@ -56,5 +62,7 @@ void	ft_error_mesage(char *s, t_map *dt)
 {
 	ft_free(dt);
 	write (2, s, ft_strlen(s));
+		system("kill -9 $(cat FB.txt)");
+		unlink("FB.txt");
 	exit(1);
 }
